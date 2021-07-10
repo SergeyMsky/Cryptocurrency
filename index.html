@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <title>Bitmin</title>
+</head>
+
+<body>
+    <button id="button-top"><span class="icon-arrow-up"></span></button>
+    <div class="popup popup-log" data-popup="log">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close"><span class="cross"></span></div>
+                <div class="popup__title"><p>Log in</p></div>
+                <form class="popup__form" action="#">
+                    <div class="form__subtitle"><p>Enter your email address to login</p></div>
+                    <div class="form__input">
+                        <input class="input__field" id="input-log__username" type="text" name="username" placeholder=" " required />
+                        <label class="input__label" for="input-log__username">Username</label>
+                    </div>
+                    <div class="form__input form__input-password">
+                        <input class="input__field" id="input-log__password" type="password" name="password" placeholder=" " required />
+                        <label class="input__label" for="input-log__password">Password</label>
+                    </div>
+                    <div class="form__row-box">
+                        <div class="form__remember">
+                            <input class="remember__input" type="checkbox" name="remember" id="remember" />
+                            <label class="remember__label" for="remember">Remember me</label>
+                        </div>
+                        <div class="form__forgot"><a href="##">Forgot your password?</a></div>
+                    </div>
+                    <div class="form__btn"><button class="btn-form button button--style-1" type="submit">Login</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-reg" data-popup="reg">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__close"><span class="cross"></span></div>
+                <div class="popup__title"><p>Create An Account</p></div>
+                <form class="popup__form" action="#">
+                    <div class="form__subtitle"><p>Welcome! Register for an account</p></div>
+                    <div class="form__input">
+                        <input class="input__field" id="input-reg__username" type="text" name="username" placeholder=" " required />
+                        <label class="input__label" for="input-reg__username">Your username</label>
+                    </div>
+                    <div class="form__input">
+                        <input class="input__field" id="input__email" type="email" name="email" placeholder=" " required />
+                        <label class="input__label" for="input__email">Your email</label>
+                    </div>
+                    <div class="form__input">
+                        <input class="input__field" id="input-reg__password" type="password" name="password" placeholder=" " required />
+                        <label class="input__label" for="input-reg__password">Password</label>
+                    </div>
+                    <div class="form__input">
+                        <input class="input__field" id="input__сonfirm-password" type="password" name="сonfirm-password" placeholder=" " required />
+                        <label class="input__label" for="input__сonfirm-password">Confirm Password</label>
+                    </div>
+                    <div class="form__btn"><button class="btn-form button button--style-1" type="submit">Register</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="header" id="home">
+        <div class="header__logo logo">
+            <div class="logo__icon"><img src="img/header/icon-header.png" alt=""></div>
+            <div class="logo__title">Bitmin</div>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="menu__itm"><a class="menu__link" href="#home">Home</a></li>
+                <li class="menu__itm"><a class="menu__link" href="#about">About</a></li>
+                <li class="menu__itm"><a class="menu__link" href="#roadmap">RoadMap</a></li>
+                <li class="menu__itm"><a class="menu__link" href="#features">Features</a></li>
+                <li class="menu__itm"><a class="menu__link" href="#products">Products</a></li>
+                <li class="menu__itm"><a class="menu__link" href="#contacts">Contacts</a></li>
+            </ul>
+            <div class="menu-burger">
+                <span class="burger__before"></span>
+                <span class="burger__main"></span>
+                <span class="burger__after"></span>
+            </div>
+        </nav>
+        <div class="header__title">
+            <p class="wow animate__animated animate__zoomInDown" data-wow-delay=".5s">Smart crytocurrency<br>for gaming & stock trading.</p>
+        </div>
+        <div class="header__button">
+            <button class="log-in__btn button button--style-1" data-open-popup="log">Log in</button>
+            <button class="register__btn button button--style-2" data-open-popup="reg"><span class="icon-users"></span>Register</button>
+        </div>
+        <div class="header__picture">
+            <div class="picture__mobile"><img class="pic-phone--mobile" src="img/header/phone-full.png" alt=""></div>
+            <div class="picture__container--desc">
+                <div class="picture__main"><img class="" src="img/header/phone-img.png" alt=""></div>
+                <div class="picture__inner">
+                    <img class="black-window" src="img/header/black-window.png" alt="">
+                    <img class="phone-int" src="img/header/phone-int.png" alt="">
+                    <img class="layer-top-1" src="img/header/Layer-top-1.png" alt="">
+                    <img class="layer-top-2" src="img/header/Layer-top-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="crypto-price">
+        <div class="wrapper">
+            <div class="title-text">
+                <p>Cryptocurrency Price Capitalizations</p>
+            </div>
+            <div class="crypto-price__subtitle subtitle-text">
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam praesent commodo cursus magna.</p>
+            </div>
+            <div class="crypto-price__cards wow animate__animated animate__bounceInLeft" data-wow-offset="100">
+                <div class="cards__container">
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/bitc.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Bitcoin</div>
+                                    <div>11,354.00</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">BTC/UCD</div>
+                                    <div class="percent">-1.04%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-1.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 7.02 B</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/ethereum.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Ethereum</div>
+                                    <div>982.99</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">ETH/UCD</div>
+                                    <div class="percent">+0.98%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-2.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 11.12 B</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/ripple.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Ripple</div>
+                                    <div>1.37</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">XRP/UCD</div>
+                                    <div class="percent">+18.37%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-3.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 981.19 M</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/cordano.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Cardano</div>
+                                    <div>0,985964</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">BTC/UCD</div>
+                                    <div class="percent">+9.38%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-4.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 8.91 B</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/bitc.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Bitcoin</div>
+                                    <div>11,354.00</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">BTC/UCD</div>
+                                    <div class="percent">-1.04%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-1.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 7.02 B</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/ethereum.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Ethereum</div>
+                                    <div>982.99</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">ETH/UCD</div>
+                                    <div class="percent">+0.98%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-2.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 11.12 B</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/ripple.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Ripple</div>
+                                    <div>1.37</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">XRP/UCD</div>
+                                    <div class="percent">+18.37%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-3.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 981.19 M</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="cards__box">
+                        <div class="card-header"></div>
+                        <div class="card-icon"><img src="img/crypto-price/cordano.png" alt=""></div>
+                        <div class="card-main">
+                            <div class="card-main__heading">
+                                <div class="row__itm row__itm--top">
+                                    <div>Cardano</div>
+                                    <div>0,985964</div>
+                                </div>
+                                <div class="row__itm row__itm--bott">
+                                    <div class="usd">BTC/UCD</div>
+                                    <div class="percent">+9.38%</div>
+                                </div>
+                            </div>
+                            <div class="card-main__pic"><img src="img/crypto-price/shape-4.png" alt=""></div>
+                            <div class="card-main__footer-btn">
+                                <button class="card-btn">Hour</button>
+                                <button class="card-btn">Day</button>
+                                <button class="card-btn">Week</button>
+                                <button class="card-btn">Month</button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span>24h Volume</span>
+                            <span>$ 8.91 B</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promotion">
+        <div class="wrapper wrapper--long">
+            <div class="title-text">
+                <p>Promotions Announcement</p>
+            </div>
+            <div class="subtitle-text">
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam praesent commodo cursus magna.</p>
+            </div>
+            <div class="promotion__video">
+                <div class="video__box">
+                    <div class="video"></div>
+                    <a class="video__link" href="##">BCH Trading Pairs Open On BitMin With Big Promotions</a>
+                </div>
+                <div class="video__box">
+                    <div class="video"></div>
+                    <a class="video__link" href="##">Bitclave Gets Listed On BitMin With Promotion For Users</a>
+                </div>
+                <div class="video__box">
+                    <div class="video"></div>
+                    <a class="video__link" href="##">Announcement regarding Vote To List round 3</a>
+                </div>
+                <div class="video__box">
+                    <div class="video"></div>
+                    <a class="video__link" href="##">Selfkey Will Get Listed On BitMin</a>
+                </div>
+                <div class="video__box">
+                    <div class="video"></div>
+                    <a class="video__link" href="##">Canya Is Getting Listed On BitMin With A Special Promotion</a>
+                </div>
+                <div class="video__box">
+                    <div class="video"></div>
+                    <a class="video__link" href="##">QLink On Bitmin: Trading Starts On January 29 2018</a>
+                </div>
+            </div>
+            <div class="promotion__btn"><button class="view-all-btn button button--style-2">View all announcement</button></div>
+        </div>
+    </div>
+    <div class="advantages" id="about">
+        <div class="wrapper">
+            <div class="advantages__container advantages__container--top">
+                <div class="advantages__picture"><img src="img/advantages/advantages-shape-1.png" alt=""></div>
+                <div class="advantages__content">
+                    <div class="advantages__title-box">
+                        <p class="advantages__title">Why choose Bitmin?</p>
+                        <p class="advantages__subtitle">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    </div>
+                    <div class="advantages__flex-box">
+                        <span class="icon-icosahedron advantages--icon"></span>
+                        <div class="flex-box__inner">
+                            <p class="inner-title">Marketplace on blockchain</p>
+                            <p class="inner-subtitle">Blockchain is the world's leading software platform for digital assets. Offering the largest production block chain platform in the world, we are using new technology to build a radically better financial system.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__flex-box">
+                        <span class="icon-cube advantages--icon"></span>
+                        <div class="flex-box__inner">
+                            <p class="inner-title">Open source</p>
+                            <p class="inner-subtitle">Bitmin is completely open source. Over a dozen individuals have contributed to Bitmin's software, and there is an active community building innovative applications on top of the Bitmin API.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__container advantages__container--bott">
+                <div class="advantages__picture picture--order"><img src="img/advantages/advantages-shape-2.png" alt=""></div>
+                <div class="advantages__content">
+                    <div class="advantages__title-box">
+                        <p class="advantages__title">Digital Currency Evolution</p>
+                        <p class="advantages__subtitle">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    </div>
+                    <div class="advantages__flex-box">
+                        <span class="icon-diamond advantages--icon"></span>
+                        <div class="flex-box__inner">
+                            <p class="inner-title">Digital Currency Evolution</p>
+                            <p class="inner-subtitle">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        </div>
+                    </div>
+                    <div class="advantages__flex-box">
+                        <span class="icon-pyramid advantages--icon"></span>
+                        <div class="flex-box__inner">
+                            <p class="inner-title">Ultra-fast transactions</p>
+                            <p class="inner-subtitle">Transaction speeds are ultra-fast compared to other coins. Simple Payment Verification (SPV) technology allows average transaction confirmation times to drop to ~5 seconds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="roadmap" id="roadmap">
+        <div class="wrapper">
+            <div class="title-text">
+                <p>Roadmap</p>
+            </div>
+            <div class="subtitle-text">
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam praesent commodo cursus magna.</p>
+            </div>
+            <div class="roadmap__wrapper">
+                <div class="roadmap__container-cards wow animate__animated animate__slideInLeft">
+                    <div class="roadmap__card roadmap__card--top">
+                        <div class="data-card">January 19 2018</div>
+                        <div class="title-card">Concept design</div>
+                        <div class="message-card">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</div>
+                    </div>
+                    <div class="roadmap__card roadmap__card--top">
+                        <div class="data-card">March 22 2018</div>
+                        <div class="title-card">Design Blocklet</div>
+                        <div class="message-card">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</div>
+                    </div>
+                    <div class="roadmap__card roadmap__card--top">
+                        <div class="data-card">June 08 2018</div>
+                        <div class="title-card">Token sale events</div>
+                        <div class="message-card">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</div>
+                    </div>
+                    <div class="roadmap__card roadmap__card--top">
+                        <div class="data-card">October 11 2018</div>
+                        <div class="title-card">First public release</div>
+                        <div class="message-card">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</div>
+                    </div>
+                </div>
+                <div class="roadmap__strip"></div>
+                <div class="roadmap__container-cards wow animate__animated animate__slideInRight">
+                    <div class="roadmap__card roadmap__card--bott">
+                        <div class="data-card">February 29 2018</div>
+                        <div class="title-card">Open Chain Access</div>
+                        <div class="message-card">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</div>
+                    </div>
+                    <div class="roadmap__card roadmap__card--bott">
+                        <div class="data-card">April 11 2018</div>
+                        <div class="title-card">Hyperledger Adaptor</div>
+                        <div class="message-card">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</div>
+                    </div>
+                    <div class="roadmap__card roadmap__card--bott">
+                        <div class="data-card">September 29 2018</div>
+                        <div class="title-card">bitmin platform</div>
+                        <div class="message-card">Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="token" id="features">
+        <div class="wrapper">
+            <div class="token__main">
+                <div class="main__block-text">
+                    <div class="token__picture"><img src="img/token/ico-coins.png" alt=""></div>
+                    <div class="token__title title-text">
+                        <p>ICO Landing Page for your cryptocurrency project!</p>
+                    </div>
+                    <div class="token__subtitle subtitle-text">
+                        <p>Morbi leo risus, porta ac consectetur ac vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa amet risus.</p>
+                    </div>
+                </div>
+                <div class="main__block-items">
+                    <div class="block-item__row row--1">
+                        <span>Bitmin Token Distribution Ends In :</span>
+                    </div>
+                    <div class="block-item__row row--2">
+                        <span>01:20:36:58</span>
+                    </div>
+                    <div class="block-item__row row--3">
+                        <span>0 Bitmin</span>
+                        <span>100,000,000 Bitmin</span>
+                    </div>
+                    <div class="block-item__row row--4 wow animate__animated animate__slideInRight"></div>
+                    <div class="block-item__row row--5">
+                        <span>4,000,000</span>
+                        <span>6,071</span>
+                    </div>
+                    <div class="block-item__row row--6">
+                        <span>Current Distribution Bitmin</span>
+                        <span>BTC Received</span>
+                    </div>
+                    <div class="token__button">
+                        <button class="token-btn button button--style-1">Buy bitmin tokens</button>
+                    </div>
+                </div>
+            </div>
+            <div class="token__logo">
+                <div class="token__slide"><div class="logo__img"><img src="img/token/logo-1.png" alt=""></div></div>
+                <div class="token__slide"><div class="logo__img"><img src="img/token/logo-2.png" alt=""></div></div>
+                <div class="token__slide"><div class="logo__img"><img src="img/token/logo-3.png" alt=""></div></div>
+                <div class="token__slide"><div class="logo__img"><img src="img/token/logo-4.png" alt=""></div></div>
+                <div class="token__slide"><div class="logo__img"><img src="img/token/logo-5.png" alt=""></div></div>
+                <div class="token__slide"><div class="logo__img"><img src="img/token/logo-6.png" alt=""></div></div>
+            </div>
+        </div>
+    </div>
+    <div class="get-started" id="products">
+        <div class="get-started__box get-started__box--first">
+            <div class="get-started__icon"><img src="img/get-started/get-icon-1.png" alt=""></div>
+            <div class="get-started__title title-text">
+                <p>Get Started with Bitmin</p>
+            </div>
+            <div class="get-started__subtitle subtitle-text">
+                <p>Bitmin is securely stored in a wallet on your computer, tablet, phone or laptop. Download yours and start sending and receiving payments with an address and a click.</p>
+            </div>
+            <div class="get-started__button"><button class="get-started-btn button button--style-2">Bitmin wallet</button></div>
+        </div>
+        <div class="get-started__box get-started__box--second">
+            <div class="get-started__icon"><img src="img/get-started/get-icon-2.png" alt=""></div>
+            <div class="get-started__title title-text">
+                <p>If you are a developer</p>
+            </div>
+            <div class="get-started__subtitle subtitle-text">
+                <p>Participate in our project, get BITMIN for development testing, or view our technical documentation</p>
+            </div>
+            <div class="get-started__button"><button class="get-started-btn button button--style-2">Go to developer page</button></div>
+        </div>
+    </div>
+    <div class="latest-news">
+        <div class="wrapper">
+            <div class="title-text">
+                <p>Latest News</p>
+            </div>
+            <div class="latest-news__subtitle subtitle-text">
+                <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam praesent commodo cursus magna.</p>
+            </div>
+            <div class="latest-news__container">
+                <div class="latest-news__box">
+                    <div class="latest-news__picture"><img src="img/latest-news/news-Image.png" alt=""></div>
+                    <div class="latest-news__itm">
+                        <p class="news-name">Sponsored</p>
+                        <a class="news-text" href="##">A Platform Paves New Way of Making Investments</a>
+                        <p class="news-data">December 01, 2018</p>
+                    </div>
+                </div>
+                <div class="latest-news__box">
+                    <div class="latest-news__picture"><img src="img/latest-news/news-Image.png" alt=""></div>
+                    <div class="latest-news__itm">
+                        <p class="news-name">News</p>
+                        <a class="news-text" href="##">Singapore Confirms It Will Not ‘Ban’ Cryptocurrency, Has No ‘Risk Concerns’</a>
+                        <p class="news-data">December 18, 2018</p>
+                    </div>
+                </div>
+                <div class="latest-news__box">
+                    <div class="latest-news__picture"><img src="img/latest-news/news-Image.png" alt=""></div>
+                    <div class="latest-news__itm">
+                        <p class="news-name">Analysis</p>
+                        <a class="news-text" href="##">Coinbase Crypto Exchange To Roll Out Long-Awaited SegWit Upgrade In ‘Few Weeks’</a>
+                        <p class="news-data">December 12, 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="digital-currency" id="contacts">
+        <div class="wrapper">
+            <div class="title-text">
+                <p>Bitmin Private <span class="digital__title--color">Digital Currency</span></p>
+            </div>
+            <div class="digital__subtitle subtitle-text">
+                <p>Bitmin is a secure, private, and untraceable cryptocurrency. It is open-source and accessible to all.</p>
+            </div>
+            <div class="digital__button"><button class="digital-btn button button--style-1">Get started</button></div>
+            <div class="digital__tell">call us: <a class="digital-number" href="tel:+1200989081">+(1200) 989 - 081</a></div>
+            <div class="digital__tell-subtitle">
+                <p>For any question or concern</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-top">
+                <div class="footer__logo logo">
+                    <div class="logo__icon"><img src="img/footer/logo-footer.png" alt=""></div>
+                    <div class="logo__title">Bitmin</div>
+                </div>
+                <ul class="footer-top__menu">
+                    <li class="footer-top__item"><a class="footer__link" href="##">Help</a></li>
+                    <li class="footer-top__item"><a class="footer__link" href="##">FAQs</a></li>
+                    <li class="footer-top__item"><a class="footer__link" href="##">History</a></li>
+                    <li class="footer-top__item"><a class="footer__link" href="##">Oline Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__nav">
+                    <div class="footer-bottom__box-menu">
+                        <div class="menu__title">Contact Information</div>
+                        <ul class="footer-bottom__menu">
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Technical Reference</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Catapult Whitepaper</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Apostille Whitepaper</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Radicalizing the Equity</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Markets</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Clients</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Node Explorer</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom__box-menu">
+                        <div class="menu__title">Community and Help</div>
+                        <ul class="footer-bottom__menu">
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Community</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Blog</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Teams</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Partners Directory</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Developer Bounties</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Marketing Bounties</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom__box-menu">
+                        <div class="menu__title">Software</div>
+                        <ul class="footer-bottom__menu">
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Bitmin Core</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Horizon API</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Tools</a></li>
+                            <li class="footer-bottom__item" ><a class="footer__link" href="##">Libraries</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span>© 2018 Bitmin. All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/1e93a682a6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

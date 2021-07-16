@@ -55,8 +55,8 @@ $(document).ready(function(){
 	});
 });
 
-let phoneInt = document.querySelectorAll(".phone-int");
-setTimeout(function (){ phoneInt.forEach(element => {element.style.opacity = "1"})}, 1000);
+let phoneInt = document.querySelectorAll('.phone-int');
+setTimeout(function (){ phoneInt.forEach(element => {element.style.opacity = '1'})}, 1000);
 
 $(document).mouseup(function(){
 	$('.menu-burger').click(function(e) {

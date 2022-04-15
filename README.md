@@ -1,1 +1,1 @@
-# https://sergeymsky.github.io/Crytocurrency/
+Landing page - Cryptocurrency
